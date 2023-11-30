@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url(../fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+hr {
+    width: 80%;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 42px;
+    color: #ffffff;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Montserrat-Bold';
+    font-size: 48px;
+    color: #ffffff;
+}
+
+h3 {
+    font-family: 'Montserrat-Regular';
+    font-size: 36px;
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 32px;
+    color: #000000;
+    margin: 0;
+}
+
+p {
+    font-family: 'Montserrat-Regular';
+    font-size: 24px;
+    color: #000000;
+}
+
+a {
+    font-family: 'Montserrat-Medium';
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal-header {
+    background-color: #000000;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    z-index: 2;
+}
+
+.logo {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 48px;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+}
+
+.list li {
+    margin-right: 100px;
+}
+
+.list li:last-child {
+    margin-right: 0;
+}
+
+.list a:hover,
+.list a.clicked {
+    color: #22d2dd;
+}
+
+.section-home {
+    padding-top: 72px;
+    background-color: #101010;
+}
+
+.section-home .container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 180px;
+}
+
+.section-home__title {
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+.section-home__line {
+    margin-bottom: 20px;
+}
+
+.section-home__subtitle {
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+.section-home__img {
+    padding-bottom: 60px;
+}
+
+.section-home__button {
+    border: 2px solid #ffffff;
+    padding: 20px 30px;
+    margin-bottom: 60px;
+}
+
+.section-about {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.section-about .container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-about__title {
+    color: #000000;
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-about__text,
+.section-about__img {
+    width: 48%;
+    height: 100%;
+}
+
+.section-about__text {
+    text-align: justify;
+}
+
+.text-img-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.section-products {
+    background-color: #101010
+}
+
+.section-products .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-products__title {
+    text-align: center;
+    width: 100%;
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-products___slider {
+    text-align: center;
+    overflow: hidden;
+    width: 900px;
+    height: auto;
+}
+
+.slider__single {
+    margin-bottom: 20px;
+}
+
+.slider__single-img {
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider__single-img:hover {
+    transform: scale(1.1);
+}
+
+/* Спросить у перпода, почему не срабатывают text-align и тд */
+.slider__single-text {
+    color: #ffffff
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-dot {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 0 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev-button,
+.next-button {
+    background-color: transparent;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border: none;
+    margin-bottom: 90px;
+    z-index: 0;
+}
+
+.prev-button {
+    background-image: url('../img/arrow-left.png');
+    margin-right: 50px;
+}
+
+.next-button {
+    background-image: url('../img/arrow-right.png');
+    margin-left: 50px;
+}
+
+.section-specifications {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.section-specifications .container {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.section-specifications__title {
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+.text-group {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.text-group h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-group p {
+    white-space: pre-line;
+}
+
+.footer {
+    background-color: #101010;
+}
+
+.footer .container {
+    flex-direction: column;
+}
+
+.footer__group-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.social-group {
+    display: flex;
+    align-items: center;
+}
+
+.social-group svg {
+    margin-right: 20px;
+}
+
+.social-group svg:last-child {
+    margin-right: 0;
+}
+
+.footer__line {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer__group-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer__text-info {
+    color: #ffffff;
+    white-space: pre-line;
+}
+
+.footer__list a {
+    margin-right: 30px;
+}
+
+.footer__list a:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,352 @@
+/* Общие стили */
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url(../fonts/Montserrat/static/Montserrat-SemiBold.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+hr {
+    width: 80%;
+    background-color: #ffffff;
+    /* margin: 2% auto; Изменено на проценты */
+}
+
+h1 {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 4.5vh;
+    color: #ffffff;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Montserrat-Bold';
+    font-size: 5vh; /* Изменено на vh */
+    color: #ffffff;
+}
+
+h3 {
+    font-family: 'Montserrat-Regular';
+    font-size: 4vh; /* Изменено на vh */
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 3.8vh; /* Изменено на vh */
+    color: #000000;
+    margin: 0;
+}
+
+p {
+    font-family: 'Montserrat-Regular';
+    font-size: 2.5vh; /* Изменено на vh */
+    color: #000000;
+}
+
+a {
+    font-family: 'Montserrat-Medium';
+    font-size: 2.6vh; /* Изменено на vh */
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal-header {
+    background-color: #000000;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 7.8vh;
+    z-index: 2;
+}
+
+.logo {
+    font-family: 'Montserrat-SemiBold';
+    font-size: 5.2vh; 
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+}
+
+.list li {
+    margin-right: 100px; /* Изменено на проценты */
+}
+
+.list li:last-child {
+    margin-right: 0;
+}
+
+.list a:hover,
+.list a.clicked {
+    color: #22d2dd;
+}
+
+.section-home {
+    padding-top: 8vh; 
+    background-color: #101010;
+}
+
+.section-home .container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%; /* Изменено на проценты */
+}
+
+.section-home__title {
+    padding-top: 5vh; 
+    margin-bottom: 2vh; /* Изменено на vh */
+}
+
+.section-home__line {
+    margin-bottom: 2vh; /* Изменено на vh */
+}
+
+.section-home__subtitle {
+    margin-bottom: 6vh; /* Изменено на vh */
+    color: #ffffff;
+}
+
+.section-home__img {
+    padding-bottom: 6vh;
+    width: 90%;
+    height: auto;
+}
+
+.section-home__button {
+    border: 2px solid #ffffff;
+    padding: 2vh 3vh; /* Изменено на vh */
+    margin-bottom: 6vh; /* Изменено на vh */
+}
+
+.section-about {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.section-about .container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-about__title {
+    color: #000000;
+    padding-top: 6vh; /* Изменено на vh */
+    margin-bottom: 6vh; /* Изменено на vh */
+}
+
+.section-about__text,
+.section-about__img {
+    width: 48%;
+    height: 100%;
+}
+
+.section-about__text {
+    text-align: justify;
+}
+
+.text-img-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6vh; /* Изменено на vh */
+}
+
+.section-products {
+    background-color: #101010;
+}
+
+.section-products .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-products__title {
+    text-align: center;
+    width: 100%;
+    padding-top: 6vh; /* Изменено на vh */
+    margin-bottom: 6vh; /* Изменено на vh */
+}
+
+.section-products___slider {
+    text-align: center;
+}
+
+.slider__single {
+    margin-bottom: 2vh; /* Изменено на vh */
+}
+
+.slider__single-img {
+    width: 100vh;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 1vh; /* Изменено на vh */
+}
+
+.slider__single-text {
+    color: #ffffff;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-dot {
+    width: 3vh; /* Изменено на vh */
+    height: 3vh; /* Изменено на vh */
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 0 1vh; /* Изменено на vh */
+    cursor: pointer;
+    margin-bottom: 4vh; /* Изменено на vh */
+}
+
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev-button,
+.next-button {
+    background-color: transparent;
+    background-size: cover;
+    width: 7vh; /* Изменено на vh */
+    height: 7vh; /* Изменено на vh */
+    border: none;
+    margin-bottom: 9vh; /* Изменено на vh */
+    z-index: 1;
+}
+
+.prev-button {
+    background-image: url('../img/arrow-left.png');
+    margin-right: 5vh;
+}
+
+.next-button {
+    background-image: url('../img/arrow-right.png');
+    margin-left: 5vh;
+}
+
+.section-specifications {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.section-specifications .container {
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.section-specifications__title {
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    padding-top: 6vh; /* Изменено на vh */
+    margin-bottom: 6vh; /* Изменено на vh */
+}
+
+.text-group {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 6vh; /* Изменено на vh */
+}
+
+.text-group h4 {
+    text-align: center;
+    margin-bottom: 2vh; /* Изменено на vh */
+}
+
+.text-group p {
+    white-space: pre-line;
+}
+
+.footer {
+    background-color: #101010;
+}
+
+.footer .container {
+    flex-direction: column;
+}
+
+.footer__group-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh; /* Изменено на vh */
+    padding-top: 2vh; /* Изменено на vh */
+}
+
+.social-group {
+    display: flex;
+    align-items: center;
+}
+
+.social-group svg {
+    margin-right: 2vh; /* Изменено на vh */
+}
+
+.social-group svg:last-child {
+    margin-right: 0;
+}
+
+.footer__line {
+    width: 100%;
+    margin-bottom: 2vh; /* Изменено на vh */
+}
+
+.footer__group-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh; /* Изменено на vh */
+}
+
+.footer__text-info {
+    color: #ffffff;
+    white-space: pre-line;
+}
+
+.footer__list a {
+    margin-right: 3vh; /* Изменено на vh */
+}
+
+.footer__list a:last-child {
+    margin-right: 0;
+}
