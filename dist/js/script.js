@@ -140,7 +140,38 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    document.querySelector('.section-home__button').addEventListener('click', function() {
+        document.getElementById('formOverlay').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    });
+
 });
 
+function closeForm() {
+    document.getElementById('formOverlay').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
 
+document.addEventListener('click', function(event) {
+    var formOverlay = document.getElementById('formWindow');
+    
+    if (!formOverlay.contains(event.target) && event.target !== document.querySelector('.section-home__button')) {
+        closeForm();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var currentValue = 75;
+    var valueElement = document.getElementById('value');
+
+    var intervalId = setInterval(function() {
+        currentValue--;
+        valueElement.textContent = currentValue + "%";
+
+        if (currentValue === 0) {
+            clearInterval(intervalId);
+        }
+    }, 1000);
+});
 

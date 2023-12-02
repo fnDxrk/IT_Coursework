@@ -33,11 +33,28 @@
                     Akko 5075B Plus V2
                 </h1>
                 <hr class="section-home__line">
-                <h3 class="section-home__subtitle">
-                    Wireless & Wired Mechanical Keyboard 75%
-                </h3>
+                <div class="cont">
+                    <h3 class="section-home__subtitle_1">
+                        Wireless & Wired Mechanical Keyboard
+                    </h3>
+                    <h3 class="section-home__subtitle_2" id="value">75%</h3>
+                </div>
                 <img class="section-home__img" src="img/Keyboard.png" alt="Keyboard">
-                <a class="section-home__button" href="">Buy Now</a>
+                <a class="section-home__button">Buy Now</a>
+                <div class="form-overlay" id="formOverlay">
+                    <div class="form-container" id="formWindow">
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
+                        <button onclick="closeForm()">Close</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="About" class="section-about">
@@ -120,6 +137,14 @@
                 </div>
             </div>
         </section>
+
+        <section id="Map" class="section-map">
+            <div class="container">
+                <h2 class="section-map__title">MAP INFO</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8979.654603306533!2d37.6631425!3d55.7600022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53575bf247d71%3A0x54c9c225610d8cd4!2sGeekboards!5e0!3m2!1sru!2sru!4v1701506434208!5m2!1sru!2sru" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        
     </main>
 
     <footer class="footer">
